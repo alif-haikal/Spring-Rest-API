@@ -9,7 +9,11 @@ public class Todo {
 	private String description;
 	private Date targetDate;
 	private Boolean isCompleted;
-
+	
+	protected Todo() {
+		
+	}
+	
 	public Todo(Long id, String username, String description, Date targetDate, Boolean isCompleted) {
 		super();
 		this.id = id;
