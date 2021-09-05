@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 //Controller
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:8080")
 @RestController
 public class BasicAuthenticationController {
 	
