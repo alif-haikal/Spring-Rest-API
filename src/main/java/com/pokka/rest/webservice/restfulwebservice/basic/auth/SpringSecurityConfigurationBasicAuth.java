@@ -14,6 +14,7 @@ public class SpringSecurityConfigurationBasicAuth extends WebSecurityConfigurerA
 	protected void configure(HttpSecurity http) throws Exception {
 		
 		/********Purpose********/
+		//https://www.yawintutor.com/how-to-enable-and-disable-csrf/
 		//disable CSRF
 		//accpet request to all URL
 		//autheticate all other request and use basic authentication
