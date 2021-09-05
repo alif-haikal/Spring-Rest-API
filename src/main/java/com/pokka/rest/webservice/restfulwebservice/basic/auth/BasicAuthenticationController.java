@@ -1,4 +1,4 @@
-package com.pokka.rest.webservice.restfulwebservice.helloWorld;
+package com.pokka.rest.webservice.restfulwebservice.basic.auth;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 //Controller
 @CrossOrigin
 @RestController
-public class HelloWorldController {
+public class BasicAuthenticationController {
 	
-	@GetMapping(path = "/hello/{name}")
-	public HelloWorldBean helloBean(@PathVariable String name) {
+	@GetMapping(path = "/basicauth")
+	public AuthenticationBean helloWorldBean(@PathVariable String name) {
 //		throw new RuntimeException("Some Error Occured"); 
-		return new HelloWorldBean(String.format("hi There %s", name));
+		return new AuthenticationBean("You are authenticated");
 	}
 
 	
